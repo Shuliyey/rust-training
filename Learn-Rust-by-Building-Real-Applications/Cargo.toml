@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "server",
+    "mars_calc",
+    "memory_management",
+]
+
+exclude = [
+    "server2",
+]
