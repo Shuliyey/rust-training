@@ -4,7 +4,7 @@ Journey on the [Learn Rust by Building Real Applications](https://www.udemy.com/
 
 # Repos
 
-* [mars_calc](./mars_calc/README.md)
-* [memory_management](./memory_management/README.md)
-* [server](./server/README.md)
-* [server2](./server2/README.md)
+* [mars_calc](./mars_calc)
+* [memory_management](./memory_management)
+* [server](./server)
+* [server2](./server2)
