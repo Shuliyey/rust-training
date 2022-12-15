@@ -1,0 +1,33 @@
+// version of protocol buffer used
+syntax = "proto3";
+
+// package name for the buffer will be used later
+package resize;
+
+// service which can be executed
+service Resize {
+// function which can be called
+  rpc Send (ResizeRequest) returns (ResizeResponse);
+  // rpc SendStream (ResizeRequest) returns (stream ResizeResponse);
+  // rpc ReceiveStream (stream ResizeRequest) returns (ResizeResponse);
+  // rpc Bidirectional(stream ResizeRequest) returns (stream ResizeResponse);
+}
+
+// argument
+message ResizeRequest {
+// data type and position of data
+  string name = 1;
+  bytes chunk = 2;
+  uint32 width = 3;
+  uint32 height = 4;
+}
+
+// return value
+message ResizeResponse {
+// data type and position of data
+  string name = 1;
+  bytes original = 2;
+  bytes chunk = 3;
+  uint32 width = 4;
+  uint32 height = 5;
+}
